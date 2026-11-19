@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/perva/OneDrive/Desktop/ML/mlruns/1/models/m-d078d8eb1b934995bc60d087b2e474fc/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.18.0
+model_id: m-d078d8eb1b934995bc60d087b2e474fc
+model_size_bytes: 1430046
+model_uuid: m-d078d8eb1b934995bc60d087b2e474fc
+prompts: null
+run_id: 83adb77bf8f24a73b9380574b174aabc
+utc_time_created: '2026-11-19 07:07:32.731881'

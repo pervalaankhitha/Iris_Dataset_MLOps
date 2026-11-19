@@ -1,0 +1,12 @@
+# Model Comparison
+
+| Model | Size MB | Train time s | Predict ms | Train acc % | Val acc % | Gap % | Eligible | Status |
+|---|---|---|---|---|---|---|---|---|
+| KNN | 0.0117 | 0.0121 | 10.3459 | 96.58 | 97.46 | -0.88 | Yes | finalist_runner_up |
+| Decision Tree | 0.0031 | 0.0023 | 0.5997 | 96.58 | 94.93 | 1.65 | Yes | eligible_but_below_accuracy_tolerance |
+| SVM | 0.0042 | 0.002 | 0.6116 | 97.44 | 97.46 | -0.03 | Yes | champion |
+| Gaussian NB | 0.0021 | 0.0016 | 0.6544 | 95.73 | 95.72 | 0.0 | Yes | eligible_but_below_accuracy_tolerance |
+| Random Forest | 0.2116 | 0.5155 | 66.222 | 98.29 | 97.43 | 0.86 | Yes | finalist_runner_up |
+| Gradient Boosting | 1.3231 | 0.6601 | 1.583 | 100.0 | 97.43 | 2.57 | Yes | finalist_runner_up |
+
+**Champion:** SVM

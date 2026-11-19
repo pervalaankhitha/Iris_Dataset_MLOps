@@ -1,0 +1,157 @@
+{
+    "KNN": {
+        "best_params": {
+            "scaler_type": "minmax",
+            "n_neighbors": 9,
+            "weights": "uniform",
+            "p": 2
+        },
+        "model_size_mb": 0.0117034912109375,
+        "training_time_seconds": 0.01211150000744965,
+        "prediction_time_ms": 10.345932000200264,
+        "training_accuracy_pct": 96.58119658119658,
+        "validation_accuracy_pct": 97.46376811594203,
+        "accuracy_gap_pct": -0.8825715347454519,
+        "search_time_seconds": 21.667935371398926,
+        "model_path": "models/KNN.pkl",
+        "eligible": true,
+        "selection_cost": 0.05137078826771724,
+        "status": "finalist_runner_up",
+        "finalist_rank": 2
+    },
+    "DecisionTree": {
+        "best_params": {
+            "scaler_type": "minmax",
+            "criterion": "gini",
+            "max_depth": 6,
+            "min_samples_split": 3,
+            "min_samples_leaf": 18,
+            "max_features": "sqrt"
+        },
+        "model_size_mb": 0.0031232833862304688,
+        "training_time_seconds": 0.002255399987916462,
+        "prediction_time_ms": 0.5996680000680499,
+        "training_accuracy_pct": 96.58119658119658,
+        "validation_accuracy_pct": 94.92753623188406,
+        "accuracy_gap_pct": 1.653660349312517,
+        "search_time_seconds": 4.347576379776001,
+        "model_path": "models/DecisionTree.pkl",
+        "eligible": true,
+        "status": "eligible_but_below_accuracy_tolerance"
+    },
+    "SVM": {
+        "best_params": {
+            "scaler_type": "standard",
+            "kernel": "linear",
+            "C": 0.8990134963288255
+        },
+        "model_size_mb": 0.004246711730957031,
+        "training_time_seconds": 0.002021799999056384,
+        "prediction_time_ms": 0.6116300000576302,
+        "training_accuracy_pct": 97.43589743589743,
+        "validation_accuracy_pct": 97.46376811594203,
+        "accuracy_gap_pct": -0.02787068004460025,
+        "search_time_seconds": 4.994852781295776,
+        "model_path": "models/SVM.pkl",
+        "eligible": true,
+        "selection_cost": 0.0,
+        "status": "champion",
+        "finalist_rank": 1
+    },
+    "GaussianNB": {
+        "best_params": {
+            "scaler_type": "minmax",
+            "var_smoothing": 8.47180141881997e-09
+        },
+        "model_size_mb": 0.0020837783813476562,
+        "training_time_seconds": 0.0016432000120403245,
+        "prediction_time_ms": 0.6543940000119619,
+        "training_accuracy_pct": 95.72649572649573,
+        "validation_accuracy_pct": 95.72463768115942,
+        "accuracy_gap_pct": 0.0018580453363057359,
+        "search_time_seconds": 5.1883544921875,
+        "model_path": "models/GaussianNB.pkl",
+        "eligible": true,
+        "status": "eligible_but_below_accuracy_tolerance"
+    },
+    "RandomForest": {
+        "best_params": {
+            "scaler_type": "minmax",
+            "n_estimators": 200,
+            "criterion": "gini",
+            "max_depth": 14,
+            "min_samples_split": 19,
+            "min_samples_leaf": 5,
+            "max_features": null,
+            "bootstrap": true
+        },
+        "model_size_mb": 0.21157264709472656,
+        "training_time_seconds": 0.5155193000100553,
+        "prediction_time_ms": 66.22195999982068,
+        "training_accuracy_pct": 98.29059829059828,
+        "validation_accuracy_pct": 97.42753623188406,
+        "accuracy_gap_pct": 0.8630620587142204,
+        "search_time_seconds": 90.16044998168945,
+        "model_path": "models/RandomForest.pkl",
+        "eligible": true,
+        "selection_cost": 0.5969695629019436,
+        "status": "finalist_runner_up",
+        "finalist_rank": 3
+    },
+    "GradientBoosting": {
+        "best_params": {
+            "scaler_type": "minmax",
+            "n_estimators": 500,
+            "learning_rate": 0.07297066678472906,
+            "max_depth": 3,
+            "min_samples_split": 16,
+            "min_samples_leaf": 7,
+            "max_features": "log2",
+            "subsample": 0.8529473914445013
+        },
+        "model_size_mb": 1.3231382369995117,
+        "training_time_seconds": 0.6600967999984277,
+        "prediction_time_ms": 1.582988000009209,
+        "training_accuracy_pct": 100.0,
+        "validation_accuracy_pct": 97.42753623188406,
+        "accuracy_gap_pct": 2.572463768115938,
+        "search_time_seconds": 82.79599356651306,
+        "model_path": "models/GradientBoosting.pkl",
+        "eligible": true,
+        "selection_cost": 0.7044414865766797,
+        "status": "finalist_runner_up",
+        "finalist_rank": 4
+    },
+    "champion": {
+        "model_name": "SVM",
+        "best_cv_accuracy": 0.9746376811594203,
+        "display_name": "SVM",
+        "criteria": {
+            "model_size_mb": 0.004246711730957031,
+            "training_time_seconds": 0.002021799999056384,
+            "prediction_time_ms": 0.6116300000576302,
+            "training_accuracy_pct": 97.43589743589743,
+            "validation_accuracy_pct": 97.46376811594203,
+            "accuracy_gap_pct": -0.02787068004460025
+        },
+        "explanation": "SVM selected: passed gap rule (< 5.0%); 4 finalist(s) within 1.0 pp of best validation accuracy (97.46%); lowest weighted size/train-time/predict-time cost."
+    },
+    "champion_model_path": "models/model.pkl",
+    "selection_policy": {
+        "max_accuracy_gap_pct (strictly below)": 5.0,
+        "accuracy_tolerance_pct": 1.0,
+        "weights": {
+            "model_size_mb": 0.4,
+            "training_time_seconds": 0.3,
+            "prediction_time_ms": 0.3
+        },
+        "fallback_used": false,
+        "finalist_ranking": [
+            "SVM",
+            "KNN",
+            "RandomForest",
+            "GradientBoosting"
+        ],
+        "selection_data": "training data only (CV validation); test set untouched"
+    }
+}
